@@ -1,7 +1,7 @@
 def is_prime(number):
     """Return True if *number* is prime."""
 
-    if type(number) != int or number < 2:
+    if not isinstance(number, int) or number < 2:
         return False
 
     for element in range(2, number):

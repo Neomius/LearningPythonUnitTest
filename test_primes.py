@@ -15,7 +15,10 @@ class PrimesTestCase(unittest.TestCase):
         self.assertFalse(is_prime(-3))
 
     def test_input_validation_letter(self):
-        self.assertFalse('a')
+        self.assertFalse(is_prime('a'))
+
+    def test_input_validation_double(self):
+        self.assertFalse(is_prime(3.0))
 
 if __name__ == '__main__':
     unittest.main()
